@@ -20,7 +20,7 @@ button:hover {
   background-color: rgb(18, 81, 135);
 }
 
-.logo {
+header .logo {
   background-color: #1D2F3D;
   height: 10vh;
   font-size: 3.5em;
@@ -31,13 +31,40 @@ button:hover {
   padding-top: 5px;
   justify-content: space-around;
   transition: 0.5s linear;
-  color: rgb(255, 187, 61);
+  color: orange;
   font-family: "Uchen", serif;
 }
-
-.logo:hover {
+header .logo:hover {
   color: orange;
   text-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 40px orange;
+}
+header section .navbar {
+  background: white;
+  width: 100%;
+}
+header section .navbar .contenedor {
+  max-width: 1000px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+}
+header section .navbar .contenedor a {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  color: black;
+  transition: 0.3s ease-out all;
+  text-decoration: none;
+  outline: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  font-weight: bold;
+}
+header section .navbar .contenedor a:hover {
+  background: #1D2F3D;
+  color: white;
+  text-decoration: none;
+  text-shadow: 0 0 10px white, 0 0 30px white, 0 0 50px white;
 }
 
 @media (max-width: 480px) {
@@ -49,12 +76,16 @@ button:hover {
     margin: auto;
     line-height: 10vh;
     transition: 0.5s linear;
-    color: rgb(255, 187, 61);
+    color: orange;
     font-family: "Uchen", serif;
   }
   .logo:hover {
     color: orange;
     text-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 40px orange;
+  }
+  .contenedor {
+    display: flex;
+    flex-direction: column;
   }
 }
 footer {
@@ -347,53 +378,6 @@ video {
   }
   video {
     display: none;
-  }
-}
-.navbar {
-  background: rgb(250, 253, 255);
-  width: 100%;
-}
-
-.contenedor {
-  max-width: 1000px;
-  width: 90%;
-  margin: auto;
-  display: flex;
-}
-
-.navbar a {
-  color: #fff;
-  padding: 20px;
-  width: 100%;
-  text-align: center;
-  color: #000;
-  transition: 0.3s ease-out all;
-}
-
-.navbar a:hover {
-  background: #1D2F3D;
-  color: #fff;
-  text-decoration: none;
-}
-
-a {
-  text-decoration: none;
-  outline: none;
-  text-transform: uppercase;
-  transition: 0.5s;
-  font-weight: bold;
-}
-
-a:hover {
-  color: white;
-  text-decoration: underline;
-  text-shadow: 0 0 10px white, 0 0 30px white, 0 0 50px white;
-}
-
-@media (max-width: 480px) {
-  .contenedor {
-    display: flex;
-    flex-direction: column;
   }
 }
 .seccion2 {

@@ -2,51 +2,93 @@
 
 
 
-.logo {
-    background-color: $seond-color;
-    height: 10vh;
-    font-size: 3.5em;
-    text-align: center;
-    align-items: center;
-    line-height: 10vh;
-    width: 100%;
-    padding-top: 5px;
-    justify-content: space-around;
-    transition: .5s linear;
-    color: rgb(255, 187, 61);
-    font-family: 'Uchen', serif;
-
-}
-
-.logo:hover {
-    color: orange;
-    text-shadow: 0 0 10px orange,
-        0 0 20px orange,
-        0 0 40px orange;
-}
-
-
-
-@media (max-width:480px){
+header {
     .logo {
-        background-color: #1D2F3D;
+        background-color: $second-color;
+        height: 10vh;
+        font-size: 3.5em;
+        text-align: center;
+        align-items: center;
+        line-height: 10vh;
+        width: 100%;
+        padding-top: 5px;
+        justify-content: space-around;
+        transition: .5s linear;
+        color: $primary-color;
+        font-family: 'Uchen', serif;
+
+        &:hover {
+            color: $primary-color;
+            text-shadow: 0 0 10px $primary-color,
+                0 0 20px $primary-color,
+                0 0 40px $primary-color;
+        }
+
+    }
+
+    section {
+        .navbar {
+            background: $tree-color;
+            width: 100%;
+
+            .contenedor {
+                max-width: 1000px;
+                width: 90%;
+                margin: auto;
+                display: flex;
+
+                a {
+                    padding: 20px;
+                    width: 100%;
+                    text-align: center;
+                    color: $font-color;
+                    transition: .3s ease-out all;
+                    text-decoration: none;
+                    outline: none;
+                    text-transform: uppercase;
+                    transition: .5s;
+                    font-weight: bold;
+
+                    &:hover {
+                        background: $second-color;
+                        color: $tree-color;
+                        text-decoration: none;
+                        text-shadow: 0 0 10px $tree-color,
+                            0 0 30px $tree-color,
+                            0 0 50px $tree-color;
+
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .logo {
+        background-color: $second-color;
         height: 10vh;
         font-size: 2em;
         text-align: center;
         margin: auto;
         line-height: 10vh;
         transition: .5s linear;
-        color: rgb(255, 187, 61);
+        color: $primary-color;
         font-family: 'Uchen', serif;
-    
-    }
-    
-    .logo:hover {
-        color: orange;
-        text-shadow: 0 0 10px orange,
-            0 0 20px orange,
-            0 0 40px orange;
-    }
-    
-}
 
+    }
+
+    .logo:hover {
+        color: $primary-color;
+        text-shadow: 0 0 10px $primary-color,
+            0 0 20px $primary-color,
+            0 0 40px $primary-color;
+    }
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+    }
+
+}

@@ -248,57 +248,6 @@ video{
    }
 }
 
-@import '../base/variables';
-
-.navbar {
-    background: rgb(250, 253, 255);
-    width: 100%;
-}
-
-.contenedor {
-    max-width: 1000px;
-    width: 90%;
-    margin: auto;
-    display: flex;
-}
-
-.navbar a {
-    color: #fff;
-    padding: 20px;
-    width: 100%;
-    text-align: center;
-    color: #000;
-    transition: .3s ease-out all;
-}
-
-.navbar a:hover {
-    background: #1D2F3D;
-    color: #fff;
-    text-decoration: none;
-}
-
-a {
-    text-decoration: none;
-    outline: none;
-    text-transform: uppercase;
-    transition: .5s;
-    font-weight: bold;
-}
-
-a:hover {
-    color: white;
-    text-decoration: underline;
-    text-shadow: 0 0 10px white,
-        0 0 30px white,
-        0 0 50px white;
-}
-
-@media (max-width:480px){
-    .contenedor{
-        display: flex;
-        flex-direction: column;
-    }
-}
 
 .seccion2{
     height: 70vh;
