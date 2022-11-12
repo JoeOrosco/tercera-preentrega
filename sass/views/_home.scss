@@ -1,196 +1,5 @@
-.nuestros-cocteles {
-    background-color: rgba(30, 30, 30);
-    color: #fff;
-    height: 100vh;
+@import '../base/variables';
 
-}
-
-.nuestros-cocteles .container {
-    text-align: center;
-    padding: 0px;
-    position: absolute;
-    justify-content: space-around;
-}
-
-.container h3,
-h4 {
-    padding: 40px;
-    font-size: 2.5em;
-    color: #fff;
-}
-
-.container h3,
-h4:hover {
-    color: orange;
-    text-shadow: 0 0 10px orange,
-        0 0 20px orange,
-        0 0 40px orange;
-}
-
-.nuestros-cocteles .cocteles {
-    display: flex;
-    height: 80vh;
-    justify-content: center;
-}
-
-.nuestros-cocteles p {
-    font-size: 1.2em;
-
-}
-
-.nuestros-cocteles .carta {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    padding: 50px;
-    margin: 20px;
-    border-radius: 15px;
-
-
-}
-
-.carta:first-child {
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url("/imagenes/machu-picchu.jpg");
-
-}
-
-.carta:nth-child(2) {
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url("/imagenes/Pisco-Sour.jpg");
-
-}
-
-.carta:nth-child(3) {
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url("/imagenes/Sol-Sombra.jpg");
-
-}
-
-@media (max-width: 480px) {
-
-
-    .nuestros-cocteles {
-        height: 200vh;
-        padding-top: 300px;
-        
-    }
-
-    .nuestros-cocteles .cocteles {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .nuestros-cocteles .container{
-        padding-top: 0;
-       
-    }
-
-    .nuestros-cocteles p {
-        display: none;
-    }
-
-}
-
-.nuestros-cocteles {
-    background-color: rgba(30, 30, 30);
-    color: #fff;
-    height: 100vh;
-
-}
-
-.nuestros-cocteles .container {
-    text-align: center;
-    padding: 0px;
-    position: absolute;
-    justify-content: space-around;
-}
-
-.container h3,
-h4 {
-    padding: 40px;
-    font-size: 2.5em;
-    color: #fff;
-}
-
-.container h3,
-h4:hover {
-    color: orange;
-    text-shadow: 0 0 10px orange,
-        0 0 20px orange,
-        0 0 40px orange;
-}
-
-.nuestros-cocteles .cocteles {
-    display: flex;
-    height: 80vh;
-    justify-content: center;
-}
-
-.nuestros-cocteles p {
-    font-size: 1.2em;
-
-}
-
-.nuestros-cocteles .carta {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    padding: 50px;
-    margin: 20px;
-    border-radius: 15px;
-
-
-}
-
-.carta:first-child {
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url("/imagenes/machu-picchu.jpg");
-
-}
-
-.carta:nth-child(2) {
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url("/imagenes/Pisco-Sour.jpg");
-
-}
-
-.carta:nth-child(3) {
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url("/imagenes/Sol-Sombra.jpg");
-
-}
-
-@media (max-width: 480px) {
-
-
-    .nuestros-cocteles {
-        height: 200vh;
-        padding-top: 300px;
-        
-    }
-
-    .nuestros-cocteles .cocteles {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .nuestros-cocteles .container{
-        padding-top: 0;
-       
-    }
-
-    .nuestros-cocteles p {
-        display: none;
-    }
-
-}
 
 .seccion {
     position: relative;
@@ -201,81 +10,197 @@ h4:hover {
     flex-direction: column;
     font-family: 'Uchen', serif;
     font-size: 2em;
-    color: #fff;
+    color: $tree-color;
     height: 110vh;
 
+    .promo {
+        position: relative;
+        z-index: 2;
+
+        h2 {
+            text-shadow: 0 0 10px rgb(18, 81, 135),
+                0 0 30px rgb(18, 81, 135),
+                0 0 50px rgb(18, 81, 135);
+        }
+    }
+
+    video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .capa {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $tree-color;
+        opacity: 0.5;
+        mix-blend-mode: overlay;
+    }
 }
 
-.promo{
-    position: relative;
-    z-index: 2;
+@media (max-width:480px) {
+    .seccion {
+        height: 90vh;
+        background-color: $second-color;
+    }
+
+    video {
+        display: none;
+    }
 }
 
-.seccion h2{
-    text-shadow: 0 0 10px rgb(18, 81, 135),
-    0 0 30px rgb(18, 81, 135),
-    0 0 50px rgb(18, 81, 135);
+.nuestros-cocteles {
+    background-color: $second-color;
+    color: $tree-color;
+    height: 100vh;
+
+    .container {
+        text-align: center;
+        padding: 0px;
+        position: absolute;
+        justify-content: space-around;
+
+        h3 {
+            padding: 40px;
+            font-size: 2.5em;
+            color: $tree-color;
+
+            &:hover {
+                color: $primary-color;
+                text-shadow: 0 0 10px $primary-color,
+                    0 0 20px $primary-color,
+                    0 0 40px $primary-color;
+            }
+        }
+
+        .cocteles {
+            display: flex;
+            height: 80vh;
+            justify-content: center;
+
+            .carta {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                padding: 50px;
+                margin: 20px;
+                border-radius: 15px;
+
+                &:first-child {
+                    background-image: linear-gradient(0deg,
+                            $color-gradient,
+                            $color-gradient), url("/imagenes/machu-picchu.jpg");
+                }
+
+                &:nth-child(2) {
+                    background-image: linear-gradient(0deg,
+                            $color-gradient,
+                            $color-gradient), url("/imagenes/Pisco-Sour.jpg");
+                }
+
+                &:nth-child(3) {
+                    background-image: linear-gradient(0deg,
+                            $color-gradient,
+                            $color-gradient), url("/imagenes/Sol-Sombra.jpg");
+                }
+
+                h4 {
+                    padding: 40px;
+                    font-size: 2.5em;
+                    color: $tree-color;
+
+                    &:hover {
+                        color: $primary-color;
+                        text-shadow: 0 0 10px $primary-color,
+                            0 0 20px $primary-color,
+                            0 0 40px $primary-color;
+                    }
+                }
+
+                p {
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
 }
 
-video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+@media (max-width: 480px) {
+    .nuestros-cocteles {
+        height: 200vh;
+        padding-top: 300px;
+
+        .container {
+            padding-top: 0;
+        }
+
+        .cocteles {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                display: none;
+            }
+        }
+    }
 }
 
-.capa{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    opacity: 0.5;
-    mix-blend-mode: overlay;
-}
-
-@media (max-width:480px){
-   .seccion{
-    height: 90vh;
-    background-color: rgb(30, 30, 30);
-   }
-
-   video{
-    display: none;
-   }
-}
-
-
-.seccion2{
+.seccion2 {
     height: 70vh;
-    background-color: #1D2F3D;
+    background-color: $second-color;
     display: flex;
     justify-content: space-around;
     text-align: center;
+
+    h4 {
+        padding: 40px;
+        font-size: 2.5em;
+        color: $tree-color;
+
+        &:hover {
+            color: $primary-color;
+            text-shadow: 0 0 10px $primary-color,
+                0 0 20px $primary-color,
+                0 0 40px $primary-color;
+
+        }
+    }
 }
 
-@media (max-width:480px){
-    .seccion2{
+@media (max-width:480px) {
+    .seccion2 {
         height: 160vh;
-        background-color: antiquewhite;
+        background-color: $font-color;
         display: flex;
         flex-direction: column;
-        
-    }
 
-    .seccion3{
-        padding-top: 10vh 10vh;
-    }
+        .seccion3 {
+            padding-top: 10vh 10vh;
 
-    .seccion2 h4{
-        color: black;
-        
-    }
+            h4 {
+                color: $tree-color;
+            }
 
-    iframe{
-        width: 400px;
+            iframe {
+                width: 400px;
+            }
+        }
+
+        .seccion4 {
+            h4 {
+                color: $tree-color;
+            }
+
+            iframe {
+                width: 400px;
+            }
+        }
     }
 }
