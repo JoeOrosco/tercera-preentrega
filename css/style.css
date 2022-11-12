@@ -1,0 +1,425 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  font-size: 1em;
+  margin: 40px;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: orange;
+  box-shadow: 2px 2px 10px rgb(18, 81, 135);
+  background-color: #1D2F3D;
+}
+
+button:hover {
+  background-color: rgb(18, 81, 135);
+}
+
+.logo {
+  background-color: #1D2F3D;
+  height: 10vh;
+  font-size: 3.5em;
+  text-align: center;
+  align-items: center;
+  line-height: 10vh;
+  width: 100%;
+  padding-top: 5px;
+  justify-content: space-around;
+  transition: 0.5s linear;
+  color: rgb(255, 187, 61);
+  font-family: "Uchen", serif;
+}
+
+.logo:hover {
+  color: orange;
+  text-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 40px orange;
+}
+
+@media (max-width: 480px) {
+  .logo {
+    background-color: #1D2F3D;
+    height: 10vh;
+    font-size: 2em;
+    text-align: center;
+    margin: auto;
+    line-height: 10vh;
+    transition: 0.5s linear;
+    color: rgb(255, 187, 61);
+    font-family: "Uchen", serif;
+  }
+  .logo:hover {
+    color: orange;
+    text-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 40px orange;
+  }
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(147, 147, 148);
+  height: 10vh;
+}
+
+footer div {
+  padding: 0px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  height: 10vh;
+}
+
+footer h3 {
+  font-size: 30px;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  padding-top: 0;
+}
+
+footer ul i {
+  font-size: 30px;
+  margin: 10px;
+  color: orange;
+}
+
+.derechos .texto {
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.derechos .enlace {
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .derechos {
+  justify-content: space-around;
+}
+
+@media (max-width: 480px) {
+  footer .derechos {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    padding: 0px 10px;
+  }
+}
+.contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.texto-encima {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  background-color: black;
+  opacity: 50%;
+  font-size: 30px;
+}
+
+.centrado {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: black;
+  opacity: 50%;
+  font-size: 20px;
+}
+
+section .imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+section .texto-cocteles {
+  background-color: rgb(18, 81, 135);
+  color: orange;
+  margin: 20px;
+  padding: 10px 0px;
+}
+
+.nuestros-cocteles {
+  background-color: rgb(30, 30, 30);
+  color: #fff;
+  height: 100vh;
+}
+
+.nuestros-cocteles .container {
+  text-align: center;
+  padding: 0px;
+  position: absolute;
+  justify-content: space-around;
+}
+
+.container h3,
+h4 {
+  padding: 40px;
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.container h3,
+h4:hover {
+  color: orange;
+  text-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 40px orange;
+}
+
+.nuestros-cocteles .cocteles {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+}
+
+.nuestros-cocteles p {
+  font-size: 1.2em;
+}
+
+.nuestros-cocteles .carta {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.carta:first-child {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imagenes/machu-picchu.jpg");
+}
+
+.carta:nth-child(2) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imagenes/Pisco-Sour.jpg");
+}
+
+.carta:nth-child(3) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imagenes/Sol-Sombra.jpg");
+}
+
+@media (max-width: 480px) {
+  .nuestros-cocteles {
+    height: 200vh;
+    padding-top: 300px;
+  }
+  .nuestros-cocteles .cocteles {
+    display: flex;
+    flex-direction: column;
+  }
+  .nuestros-cocteles .container {
+    padding-top: 0;
+  }
+  .nuestros-cocteles p {
+    display: none;
+  }
+}
+.nuestros-cocteles {
+  background-color: rgb(30, 30, 30);
+  color: #fff;
+  height: 100vh;
+}
+
+.nuestros-cocteles .container {
+  text-align: center;
+  padding: 0px;
+  position: absolute;
+  justify-content: space-around;
+}
+
+.container h3,
+h4 {
+  padding: 40px;
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.container h3,
+h4:hover {
+  color: orange;
+  text-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 40px orange;
+}
+
+.nuestros-cocteles .cocteles {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+}
+
+.nuestros-cocteles p {
+  font-size: 1.2em;
+}
+
+.nuestros-cocteles .carta {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.carta:first-child {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imagenes/machu-picchu.jpg");
+}
+
+.carta:nth-child(2) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imagenes/Pisco-Sour.jpg");
+}
+
+.carta:nth-child(3) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imagenes/Sol-Sombra.jpg");
+}
+
+@media (max-width: 480px) {
+  .nuestros-cocteles {
+    height: 200vh;
+    padding-top: 300px;
+  }
+  .nuestros-cocteles .cocteles {
+    display: flex;
+    flex-direction: column;
+  }
+  .nuestros-cocteles .container {
+    padding-top: 0;
+  }
+  .nuestros-cocteles p {
+    display: none;
+  }
+}
+.seccion {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  font-family: "Uchen", serif;
+  font-size: 2em;
+  color: #fff;
+  height: 110vh;
+}
+
+.promo {
+  position: relative;
+  z-index: 2;
+}
+
+.seccion h2 {
+  text-shadow: 0 0 10px rgb(18, 81, 135), 0 0 30px rgb(18, 81, 135), 0 0 50px rgb(18, 81, 135);
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+}
+
+@media (max-width: 480px) {
+  .seccion {
+    height: 90vh;
+    background-color: rgb(30, 30, 30);
+  }
+  video {
+    display: none;
+  }
+}
+.navbar {
+  background: rgb(250, 253, 255);
+  width: 100%;
+}
+
+.contenedor {
+  max-width: 1000px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  transition: 0.3s ease-out all;
+}
+
+.navbar a:hover {
+  background: #1D2F3D;
+  color: #fff;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  font-weight: bold;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
+  text-shadow: 0 0 10px white, 0 0 30px white, 0 0 50px white;
+}
+
+@media (max-width: 480px) {
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.seccion2 {
+  height: 70vh;
+  background-color: #1D2F3D;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .seccion2 {
+    height: 160vh;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+  }
+  .seccion3 {
+    padding-top: 10vh 10vh;
+  }
+  .seccion2 h4 {
+    color: black;
+  }
+  iframe {
+    width: 400px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

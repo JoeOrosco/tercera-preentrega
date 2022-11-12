@@ -1,0 +1,52 @@
+@import '../base/variables';
+
+
+
+.logo {
+    background-color: $seond-color;
+    height: 10vh;
+    font-size: 3.5em;
+    text-align: center;
+    align-items: center;
+    line-height: 10vh;
+    width: 100%;
+    padding-top: 5px;
+    justify-content: space-around;
+    transition: .5s linear;
+    color: rgb(255, 187, 61);
+    font-family: 'Uchen', serif;
+
+}
+
+.logo:hover {
+    color: orange;
+    text-shadow: 0 0 10px orange,
+        0 0 20px orange,
+        0 0 40px orange;
+}
+
+
+
+@media (max-width:480px){
+    .logo {
+        background-color: #1D2F3D;
+        height: 10vh;
+        font-size: 2em;
+        text-align: center;
+        margin: auto;
+        line-height: 10vh;
+        transition: .5s linear;
+        color: rgb(255, 187, 61);
+        font-family: 'Uchen', serif;
+    
+    }
+    
+    .logo:hover {
+        color: orange;
+        text-shadow: 0 0 10px orange,
+            0 0 20px orange,
+            0 0 40px orange;
+    }
+    
+}
+

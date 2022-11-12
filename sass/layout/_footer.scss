@@ -1,0 +1,55 @@
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(147, 147, 148);
+    height: 10vh;
+}
+
+footer div{
+    padding: 0px ;
+    color: rgb(0, 0, 0);
+    display: flex;
+    height: 10vh;
+}
+
+footer h3{  
+    font-size: 30px;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+    padding-top: 0;
+    
+}
+
+footer ul i{
+    font-size: 30px;
+    margin: 10px;
+    color: orange;
+}
+
+.derechos .texto{
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.derechos .enlace{
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+footer .derechos{
+    justify-content: space-around;
+}
+
+@media (max-width: 480px){
+    footer .derechos{
+        display: flex;
+        flex-direction: column;
+        height: 20vh;
+        padding: 0px 10px;
+    }
+}

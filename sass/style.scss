@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import 'components/buttons';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'views/cocteles';
+@import 'views/galeria';
+@import 'views/historia';
+@import 'views/home';
+@import 'views/socios';
