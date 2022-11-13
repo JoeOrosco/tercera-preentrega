@@ -1,40 +1,81 @@
-.contenedor {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
+@import '../base/variables';
 
-.texto-encima {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    color: white;
-    background-color: black;
-    opacity: 50%;
-    font-size: 30px;
-}
-
-.centrado {
-    position: absolute;
-    top: 50%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    color: white;
-    background-color: black;
-    opacity: 50%;
-    font-size: 20px;
-}
-
-section .imagenes {
+.section-cocteles {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+    .container-cocteles {
+        width: 400px;
+        height: 600px;
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+        margin: 200px auto;
+        border-radius: 20px;
+        box-shadow: 5px 8px 12px black;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 13px 15px 37px black;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .parrafo-cocteles {
+            font-size: 2.5em;
+            color: $tree-color;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 0 0 10px rgb(0, 0, 0, 0.9);
+        }
+    }
+
+    .video-cocteles {
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .capa-cocteles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $tree-color;
+        opacity: 0.5;
+        mix-blend-mode: overlay;
+    }
 }
 
-section .texto-cocteles {
-    background-color: rgb(18, 81, 135);
-    color: orange;
-    margin: 20px;
-    padding: 10px 0px;
+@media (max-width:480px) {
+    .section-cocteles {
+
+        display: flex;
+        flex-direction: column;
+
+        .container-cocteles {
+            margin: 20px 20px 20px 20px;
+
+        }
+
+        video {
+            display: none;
+        }
+    }
 }
