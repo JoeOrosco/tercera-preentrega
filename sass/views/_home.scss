@@ -45,7 +45,7 @@
     }
 }
 
-@media (max-width:480px) {
+@media only screen and (max-width: 768px) {
     .seccion {
         height: 90vh;
         background-color: $second-color;
@@ -132,21 +132,30 @@
     }
 }
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 768px) {
     .nuestros-cocteles {
         height: 200vh;
-        padding-top: 300px;
+        padding-top: 350px;
 
         .container {
             padding-top: 0;
-        }
-
-        .cocteles {
             display: flex;
             flex-direction: column;
+            height: 360vh;
+            inset: 0;
+            
 
-            p {
+            h3 {
                 display: none;
+            }
+
+            .cocteles {
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    display: none;
+                }
             }
         }
     }
@@ -174,7 +183,7 @@
     }
 }
 
-@media (max-width:480px) {
+@media only screen and (max-width: 768px) {
     .seccion2 {
         height: 160vh;
         background-color: $font-color;

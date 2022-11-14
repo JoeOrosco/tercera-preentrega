@@ -65,7 +65,7 @@ header {
     }
 }
 
-@media (max-width:480px) {
+@media only screen and (max-width: 768px) {
     .logo {
         background-color: $second-color;
         height: 10vh;
