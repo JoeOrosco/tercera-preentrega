@@ -30,6 +30,7 @@ header {
         .navbar {
             background: $tree-color;
             width: 100%;
+            z-index: 2;
 
             .contenedor {
                 max-width: 1000px;

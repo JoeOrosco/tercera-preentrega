@@ -41,6 +41,7 @@ header .logo:hover {
 header section .navbar {
   background: white;
   width: 100%;
+  z-index: 2;
 }
 header section .navbar .contenedor {
   max-width: 1000px;
@@ -508,21 +509,17 @@ footer .derechos .texto {
     width: 400px;
   }
 }
-.linea-socios {
-  border-top: 5px solid #1D2F3D;
-  margin-top: 0px;
-  margin-bottom: 0px;
+.row {
+  display: flex;
+  text-align: center;
+  align-items: center;
 }
 
-.container-socios {
-  display: flex;
-  background-color: rgb(31, 31, 31);
-  padding: 25px;
-  color: white;
-}
-.container-socios .texto-socios {
-  padding-left: 25px;
-  margin: 0;
+@media only screen and (max-width: 768px) {
+  .row {
+    margin: 15px;
+    padding: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
