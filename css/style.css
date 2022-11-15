@@ -47,6 +47,7 @@ header section .navbar .contenedor {
   width: 90%;
   margin: auto;
   display: flex;
+  font-size: 1.5em;
 }
 header section .navbar .contenedor a {
   padding: 20px;
@@ -141,8 +142,8 @@ footer .derechos .texto {
   footer .derechos {
     display: flex;
     flex-direction: column;
-    height: 18vh;
-    padding: 0px 15px;
+    height: 15vh;
+    padding: 0px 17px;
   }
 }
 .section-cocteles {
@@ -506,6 +507,21 @@ footer .derechos .texto {
   .seccion2 .seccion4 iframe {
     width: 400px;
   }
+}
+.linea-socios {
+  border-top: 5px solid #1D2F3D;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.container-socios {
+  display: flex;
+  background-color: rgb(31, 31, 31);
+  padding: 25px;
+  color: white;
+}
+.container-socios .texto-socios {
+  padding-left: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
