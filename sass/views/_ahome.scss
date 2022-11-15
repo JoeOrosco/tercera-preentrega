@@ -1,5 +1,11 @@
 @import '../base/variables';
 
+/*En estos estilos de mi pagina inicio, use las variables y extend*/
+
+%texto {
+    padding: 40px;
+    font-size: 2.5em;
+}
 
 .seccion {
     position: relative;
@@ -68,8 +74,7 @@
         justify-content: space-around;
 
         h3 {
-            padding: 40px;
-            font-size: 2.5em;
+            @extend %texto;
             color: $tree-color;
 
             &:hover {
@@ -112,8 +117,7 @@
                 }
 
                 h4 {
-                    padding: 40px;
-                    font-size: 2.5em;
+                    @extend %texto;
                     color: $tree-color;
 
                     &:hover {
@@ -143,7 +147,7 @@
             flex-direction: column;
             height: 360vh;
             inset: 0;
-            
+
 
             h3 {
                 display: none;
@@ -169,8 +173,7 @@
     text-align: center;
 
     h4 {
-        padding: 40px;
-        font-size: 2.5em;
+        @extend %texto;
         color: $tree-color;
 
         &:hover {
@@ -213,3 +216,6 @@
         }
     }
 }
+
+
+/*Fin de los estilos de la pagina inicio*/

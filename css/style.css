@@ -1,9 +1,11 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/*Puse los estilos de los botenes en la carpeta components para tenerlo organizado, ya los estilos que los botones son los mismos en todas las htmls*/
 button {
   font-size: 1em;
   margin: 40px;
@@ -20,6 +22,7 @@ button:hover {
   background-color: rgb(18, 81, 135);
 }
 
+/*Al igual que los botones y el footer, puse los estilos del header en la carpeta layout ya que es el mismo header que ira en todas las hmtls, y tambien aca ya use las varables que designe*/
 header .logo {
   background-color: #1D2F3D;
   height: 10vh;
@@ -90,6 +93,8 @@ header section .navbar .contenedor a:hover {
     flex-direction: column;
   }
 }
+/*fin de los estilos de mi header*/
+/*Al igual que los botones, puse los estilos del footer en la carpeta layout ya que es el mismo footer que ira en todas las hmtls, y tambien aca ya use las varables que designe*/
 footer {
   display: flex;
   justify-content: space-around;
@@ -147,6 +152,174 @@ footer .derechos .texto {
     padding: 0px 17px;
   }
 }
+/*fin de los estilos de mi footer*/
+/*En estos estilos de mi pagina inicio, use las variables y extend*/
+.seccion2 h4, .nuestros-cocteles .container .cocteles .carta h4, .nuestros-cocteles .container h3 {
+  padding: 40px;
+  font-size: 2.5em;
+}
+
+.seccion {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  font-family: "Uchen", serif;
+  font-size: 2em;
+  color: white;
+  height: 110vh;
+}
+.seccion .promo {
+  position: relative;
+  z-index: 2;
+}
+.seccion .promo h2 {
+  text-shadow: 0 0 10px rgb(18, 81, 135), 0 0 30px rgb(18, 81, 135), 0 0 50px rgb(18, 81, 135);
+}
+.seccion video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.seccion .capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+}
+
+@media only screen and (max-width: 768px) {
+  .seccion {
+    height: 90vh;
+    background-color: #1D2F3D;
+  }
+  video {
+    display: none;
+  }
+}
+.nuestros-cocteles {
+  background-color: #1D2F3D;
+  color: white;
+  height: 100vh;
+}
+.nuestros-cocteles .container {
+  text-align: center;
+  padding: 0px;
+  position: absolute;
+  justify-content: space-around;
+}
+.nuestros-cocteles .container h3 {
+  color: white;
+}
+.nuestros-cocteles .container h3:hover {
+  color: orange;
+  text-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 40px orange;
+}
+.nuestros-cocteles .container .cocteles {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+}
+.nuestros-cocteles .container .cocteles .carta {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 15px;
+}
+.nuestros-cocteles .container .cocteles .carta:first-child {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imagenes/machu-picchu.jpg");
+}
+.nuestros-cocteles .container .cocteles .carta:nth-child(2) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imagenes/Pisco-Sour.jpg");
+}
+.nuestros-cocteles .container .cocteles .carta:nth-child(3) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imagenes/Sol-Sombra.jpg");
+}
+.nuestros-cocteles .container .cocteles .carta h4 {
+  color: white;
+}
+.nuestros-cocteles .container .cocteles .carta h4:hover {
+  color: orange;
+  text-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 40px orange;
+}
+.nuestros-cocteles .container .cocteles .carta p {
+  font-size: 1.2em;
+}
+
+@media only screen and (max-width: 768px) {
+  .nuestros-cocteles {
+    height: 200vh;
+    padding-top: 350px;
+  }
+  .nuestros-cocteles .container {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    height: 360vh;
+    inset: 0;
+  }
+  .nuestros-cocteles .container h3 {
+    display: none;
+  }
+  .nuestros-cocteles .container .cocteles {
+    display: flex;
+    flex-direction: column;
+  }
+  .nuestros-cocteles .container .cocteles p {
+    display: none;
+  }
+}
+.seccion2 {
+  height: 70vh;
+  background-color: #1D2F3D;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.seccion2 h4 {
+  color: white;
+}
+.seccion2 h4:hover {
+  color: orange;
+  text-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 40px orange;
+}
+
+@media only screen and (max-width: 768px) {
+  .seccion2 {
+    height: 160vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+  }
+  .seccion2 .seccion3 {
+    padding-top: 10vh 10vh;
+  }
+  .seccion2 .seccion3 h4 {
+    color: white;
+  }
+  .seccion2 .seccion3 iframe {
+    width: 400px;
+  }
+  .seccion2 .seccion4 h4 {
+    color: white;
+  }
+  .seccion2 .seccion4 iframe {
+    width: 400px;
+  }
+}
+/*Fin de los estilos de la pagina inicio*/
+/*Comienzo de los estilos de la pagina cocteles*/
 .section-cocteles {
   display: flex;
   position: relative;
@@ -214,6 +387,8 @@ footer .derechos .texto {
     display: none;
   }
 }
+/*Fin de los estilos de la pagina cocteles*/
+/*Comienzo de los estilos de la pagina galeria*/
 .galeria {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -290,6 +465,8 @@ footer .derechos .texto {
     padding: 7px;
   }
 }
+/*Fin de los estilos de la pagina galeria*/
+/*Comienzo de los estilos de la pagina historia*/
 .historia {
   height: 100vh;
   display: flex;
@@ -344,171 +521,8 @@ footer .derechos .texto {
     text-align: center;
   }
 }
-.seccion {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  font-family: "Uchen", serif;
-  font-size: 2em;
-  color: white;
-  height: 110vh;
-}
-.seccion .promo {
-  position: relative;
-  z-index: 2;
-}
-.seccion .promo h2 {
-  text-shadow: 0 0 10px rgb(18, 81, 135), 0 0 30px rgb(18, 81, 135), 0 0 50px rgb(18, 81, 135);
-}
-.seccion video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.seccion .capa {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  opacity: 0.5;
-  mix-blend-mode: overlay;
-}
-
-@media only screen and (max-width: 768px) {
-  .seccion {
-    height: 90vh;
-    background-color: #1D2F3D;
-  }
-  video {
-    display: none;
-  }
-}
-.nuestros-cocteles {
-  background-color: #1D2F3D;
-  color: white;
-  height: 100vh;
-}
-.nuestros-cocteles .container {
-  text-align: center;
-  padding: 0px;
-  position: absolute;
-  justify-content: space-around;
-}
-.nuestros-cocteles .container h3 {
-  padding: 40px;
-  font-size: 2.5em;
-  color: white;
-}
-.nuestros-cocteles .container h3:hover {
-  color: orange;
-  text-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 40px orange;
-}
-.nuestros-cocteles .container .cocteles {
-  display: flex;
-  height: 80vh;
-  justify-content: center;
-}
-.nuestros-cocteles .container .cocteles .carta {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  padding: 50px;
-  margin: 20px;
-  border-radius: 15px;
-}
-.nuestros-cocteles .container .cocteles .carta:first-child {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imagenes/machu-picchu.jpg");
-}
-.nuestros-cocteles .container .cocteles .carta:nth-child(2) {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imagenes/Pisco-Sour.jpg");
-}
-.nuestros-cocteles .container .cocteles .carta:nth-child(3) {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imagenes/Sol-Sombra.jpg");
-}
-.nuestros-cocteles .container .cocteles .carta h4 {
-  padding: 40px;
-  font-size: 2.5em;
-  color: white;
-}
-.nuestros-cocteles .container .cocteles .carta h4:hover {
-  color: orange;
-  text-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 40px orange;
-}
-.nuestros-cocteles .container .cocteles .carta p {
-  font-size: 1.2em;
-}
-
-@media only screen and (max-width: 768px) {
-  .nuestros-cocteles {
-    height: 200vh;
-    padding-top: 350px;
-  }
-  .nuestros-cocteles .container {
-    padding-top: 0;
-    display: flex;
-    flex-direction: column;
-    height: 360vh;
-    inset: 0;
-  }
-  .nuestros-cocteles .container h3 {
-    display: none;
-  }
-  .nuestros-cocteles .container .cocteles {
-    display: flex;
-    flex-direction: column;
-  }
-  .nuestros-cocteles .container .cocteles p {
-    display: none;
-  }
-}
-.seccion2 {
-  height: 70vh;
-  background-color: #1D2F3D;
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-}
-.seccion2 h4 {
-  padding: 40px;
-  font-size: 2.5em;
-  color: white;
-}
-.seccion2 h4:hover {
-  color: orange;
-  text-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 40px orange;
-}
-
-@media only screen and (max-width: 768px) {
-  .seccion2 {
-    height: 160vh;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-  }
-  .seccion2 .seccion3 {
-    padding-top: 10vh 10vh;
-  }
-  .seccion2 .seccion3 h4 {
-    color: white;
-  }
-  .seccion2 .seccion3 iframe {
-    width: 400px;
-  }
-  .seccion2 .seccion4 h4 {
-    color: white;
-  }
-  .seccion2 .seccion4 iframe {
-    width: 400px;
-  }
-}
+/*Fin de los estilos de la pagina historia*/
+/*Comienzo de los estilos de la pagina socios, aca los estilos que añadi son solo estos ya que para esta pagina quise usar bootstrap*/
 .row {
   display: flex;
   text-align: center;
@@ -521,5 +535,6 @@ footer .derechos .texto {
     padding: 15px;
   }
 }
+/*Fin de los estilos de la pagina socios*/
 
 /*# sourceMappingURL=style.css.map */

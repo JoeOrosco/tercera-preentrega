@@ -1,5 +1,6 @@
 @import '../base/variables';
 
+/*Al igual que los botones, puse los estilos del footer en la carpeta layout ya que es el mismo footer que ira en todas las hmtls, y tambien aca ya use las varables que designe*/
 
 footer {
     display: flex;
@@ -69,3 +70,5 @@ footer {
         }
     }
 }
+
+/*fin de los estilos de mi footer*/
