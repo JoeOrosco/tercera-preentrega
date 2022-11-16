@@ -1,10 +1,12 @@
 # bar-lucerys
 
-Una aplicación hecha con html, css y bootstrap que cuenta con las siguientes características:
+Una aplicación hecha con html, css, sass y bootstrap que cuenta con las siguientes características:
 
-    - Cuenta con un carousel hecho con bootstrap.
-    - Cuenta con tres recetas de las especialidades del bar.
-    
+    - Cuenta con cinco paginas con tematica de cocteles de Barlucerys.
+    - Cuenta con tres cocteles de las especialidades del Barlucerys.
+    - Cuenta con eventos que se hace durante los fines de semana.
+    - Cuenta con una galeria de los mejores cocteles y una pagina dedicada nuestros socios.
+
 ## Stack de tecnología de la App:
 
 La aplicación utiliza las siguientes herramientas y tecnologías,
