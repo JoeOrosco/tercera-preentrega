@@ -250,7 +250,7 @@ footer .derechos .texto {
 }
 @media only screen and (max-width: 576px) {
   .seccion {
-    height: 100vh;
+    height: 150vh;
     background-color: #1D2F3D;
   }
   .seccion .promo {
@@ -487,6 +487,9 @@ footer .derechos .texto {
   .section-cocteles .container-cocteles {
     margin: 20px 20px 20px 20px;
   }
+  .section-cocteles .container-cocteles:hover {
+    transform: none;
+  }
   .section-cocteles video {
     display: none;
   }
@@ -498,6 +501,9 @@ footer .derechos .texto {
   }
   .section-cocteles .container-cocteles {
     margin: 20px 20px 20px 20px;
+  }
+  .section-cocteles .container-cocteles:hover {
+    transform: none;
   }
   .section-cocteles video {
     display: none;
@@ -655,13 +661,15 @@ footer .derechos .texto {
     align-items: center;
     text-align: center;
   }
+  .historia .parrafo-historia:hover {
+    transform: none;
+  }
 }
 @media only screen and (max-width: 576px) {
   .historia {
     display: flex;
     flex-direction: column;
     height: 290vh;
-    position: absolute;
   }
   .historia .parrafo-historia {
     height: 150vh;
@@ -669,6 +677,15 @@ footer .derechos .texto {
     margin-bottom: 50px;
     align-items: center;
     text-align: center;
+    width: auto;
+  }
+  .historia .parrafo-historia:hover {
+    transform: none;
+  }
+  .historia .parrafo-historia img {
+    float: none;
+    text-align: center;
+    justify-content: center;
   }
 }
 /*Fin de los estilos de la pagina historia*/

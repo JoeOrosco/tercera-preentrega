@@ -51,37 +51,52 @@
 
 }
 
-@media only screen and (max-width: 768px){
-    .historia{
+@media only screen and (max-width: 768px) {
+    .historia {
         display: flex;
         flex-direction: column;
         height: 260vh;
 
-        .parrafo-historia{
+        .parrafo-historia {
             height: 110vh;
             margin-top: 50px;
             margin-bottom: 50px;
             align-items: center;
             text-align: center;
-        
+
+            &:hover {
+                transform: none;
+            }
+
         }
     }
 }
 
-@media only screen and (max-width: 576px){
-    .historia{
+@media only screen and (max-width: 576px) {
+    .historia {
         display: flex;
         flex-direction: column;
         height: 290vh;
-        position: absolute;
 
-        .parrafo-historia{
+        .parrafo-historia {
             height: 150vh;
             margin-top: 50px;
             margin-bottom: 50px;
             align-items: center;
             text-align: center;
-        
+            width: auto;
+
+            &:hover {
+                transform: none;
+            }
+
+
+            img {
+                float: none;
+                text-align: center;
+                justify-content: center;
+            }
+
         }
     }
 }
