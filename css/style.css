@@ -681,13 +681,13 @@ footer .derechos .texto {
 
 @media only screen and (max-width: 768px) {
   .row {
-    margin: 200vh;
+    margin: 15px;
     padding: 15px;
   }
 }
 @media only screen and (max-width: 576px) {
   .row {
-    margin: 200vh;
+    margin: 15px;
     padding: 15px;
   }
 }
