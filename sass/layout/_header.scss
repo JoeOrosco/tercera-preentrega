@@ -99,4 +99,35 @@ header {
 
 }
 
+@media only screen and (max-width: 576px) {
+
+    .logo {
+        background-color: $second-color;
+        height: 10vh;
+        font-size: 3.5em;
+        text-align: center;
+        align-items: center;
+        line-height: 10vh;
+        width: 100%;
+        padding-top: 5px;
+        justify-content: space-around;
+        transition: .5s linear;
+        color: $primary-color;
+        font-family: 'Uchen', serif;
+    }
+
+    .logo:hover {
+        color: $primary-color;
+        text-shadow: 0 0 10px $primary-color,
+            0 0 20px $primary-color,
+            0 0 40px $primary-color;
+    }
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
 /*fin de los estilos de mi header*/

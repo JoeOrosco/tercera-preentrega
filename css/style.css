@@ -96,6 +96,30 @@ header section .navbar .contenedor a:hover {
     flex-direction: column;
   }
 }
+@media only screen and (max-width: 576px) {
+  .logo {
+    background-color: #1D2F3D;
+    height: 10vh;
+    font-size: 3.5em;
+    text-align: center;
+    align-items: center;
+    line-height: 10vh;
+    width: 100%;
+    padding-top: 5px;
+    justify-content: space-around;
+    transition: 0.5s linear;
+    color: orange;
+    font-family: "Uchen", serif;
+  }
+  .logo:hover {
+    color: orange;
+    text-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 40px orange;
+  }
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+}
 /*fin de los estilos de mi header*/
 /*Al igual que los botones, puse los estilos del footer en la carpeta layout ya que es el mismo footer que ira en todas las hmtls, y tambien aca ya use las varables que designe*/
 footer {
@@ -155,6 +179,18 @@ footer .derechos .texto {
     padding: 0px 17px;
   }
 }
+@media only screen and (max-width: 576px) {
+  footer {
+    padding: 50px;
+    height: 50vh;
+  }
+  footer .derechos {
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+    padding: 0px 17px;
+  }
+}
 /*fin de los estilos de mi footer*/
 /*En estos estilos de mi pagina inicio, use las variables y extend*/
 .seccion2 h4, .nuestros-cocteles .container .cocteles .carta h4, .nuestros-cocteles .container h3 {
@@ -201,6 +237,18 @@ footer .derechos .texto {
 }
 
 @media only screen and (max-width: 768px) {
+  .seccion {
+    height: 100vh;
+    background-color: #1D2F3D;
+  }
+  .seccion .promo {
+    height: 100vh;
+  }
+  video {
+    display: none;
+  }
+}
+@media only screen and (max-width: 576px) {
   .seccion {
     height: 100vh;
     background-color: #1D2F3D;
@@ -286,6 +334,29 @@ footer .derechos .texto {
     display: none;
   }
 }
+@media only screen and (max-width: 576px) {
+  .nuestros-cocteles {
+    height: 0vh;
+    padding-top: 40px;
+  }
+  .nuestros-cocteles .container {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    inset: 0;
+  }
+  .nuestros-cocteles .container h3 {
+    display: none;
+  }
+  .nuestros-cocteles .container .cocteles {
+    display: flex;
+    flex-direction: column;
+  }
+  .nuestros-cocteles .container .cocteles p {
+    display: none;
+  }
+}
 .seccion2 {
   height: 70vh;
   background-color: #1D2F3D;
@@ -302,6 +373,31 @@ footer .derechos .texto {
 }
 
 @media only screen and (max-width: 768px) {
+  .seccion2 {
+    height: 250vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+  }
+  .seccion2 .seccion3 {
+    padding-top: 10vh 10vh;
+  }
+  .seccion2 .seccion3 h4 {
+    padding-top: 0px;
+    color: white;
+  }
+  .seccion2 .seccion3 iframe {
+    padding-top: 0px;
+    width: 400px;
+  }
+  .seccion2 .seccion4 h4 {
+    color: white;
+  }
+  .seccion2 .seccion4 iframe {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 576px) {
   .seccion2 {
     height: 250vh;
     background-color: black;
@@ -395,6 +491,18 @@ footer .derechos .texto {
     display: none;
   }
 }
+@media only screen and (max-width: 576px) {
+  .section-cocteles {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-cocteles .container-cocteles {
+    margin: 20px 20px 20px 20px;
+  }
+  .section-cocteles video {
+    display: none;
+  }
+}
 /*Fin de los estilos de la pagina cocteles*/
 /*Comienzo de los estilos de la pagina galeria*/
 .galeria {
@@ -473,11 +581,30 @@ footer .derechos .texto {
     padding: 7px;
   }
 }
+@media screen and (max-width: 576px) {
+  .galeria h1 {
+    font-size: 22px;
+  }
+  .galeria .contenedor-imagenes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: none;
+  }
+  .galeria .contenedor-imagenes .imagen {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 7px;
+  }
+}
 /*Fin de los estilos de la pagina galeria*/
 /*Comienzo de los estilos de la pagina historia*/
 .historia {
   height: 100vh;
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: space-around;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/imagenes/fondo.jpg);
@@ -529,6 +656,21 @@ footer .derechos .texto {
     text-align: center;
   }
 }
+@media only screen and (max-width: 576px) {
+  .historia {
+    display: flex;
+    flex-direction: column;
+    height: 290vh;
+    position: absolute;
+  }
+  .historia .parrafo-historia {
+    height: 150vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    text-align: center;
+  }
+}
 /*Fin de los estilos de la pagina historia*/
 /*Comienzo de los estilos de la pagina socios, aca los estilos que añadi son solo estos ya que para esta pagina quise usar bootstrap*/
 .row {
@@ -539,7 +681,13 @@ footer .derechos .texto {
 
 @media only screen and (max-width: 768px) {
   .row {
-    margin: 15px;
+    margin: 200vh;
+    padding: 15px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .row {
+    margin: 200vh;
     padding: 15px;
   }
 }

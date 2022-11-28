@@ -4,6 +4,7 @@
 .historia {
     height: 100vh;
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: space-around;
     background-image:
@@ -58,6 +59,24 @@
 
         .parrafo-historia{
             height: 110vh;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            align-items: center;
+            text-align: center;
+        
+        }
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .historia{
+        display: flex;
+        flex-direction: column;
+        height: 290vh;
+        position: absolute;
+
+        .parrafo-historia{
+            height: 150vh;
             margin-top: 50px;
             margin-bottom: 50px;
             align-items: center;

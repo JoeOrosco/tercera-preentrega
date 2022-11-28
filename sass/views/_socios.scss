@@ -9,9 +9,17 @@
 
 @media only screen and (max-width: 768px){
     .row{
-        margin: 15px;
+        margin: 200vh;
         padding: 15px;
     }
 }
+
+@media only screen and (max-width: 576px){
+    .row{
+        margin: 200vh;
+        padding: 15px;
+    }
+}
+
 
 /*Fin de los estilos de la pagina socios*/

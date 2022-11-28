@@ -95,4 +95,31 @@
     }
 }
 
+@media screen and (max-width: 576px) {
+
+    .galeria {
+
+        h1 {
+            font-size: 22px;
+
+        }
+
+        .contenedor-imagenes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            margin: none;
+
+            .imagen {
+                width: 100%;
+                text-align: center;
+                align-items: center;
+                padding: 7px;
+            }
+        }
+    }
+}
+
+
 /*Fin de los estilos de la pagina galeria*/

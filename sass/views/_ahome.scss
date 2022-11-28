@@ -67,6 +67,22 @@
     }
 }
 
+@media only screen and (max-width: 576px) {
+    .seccion {
+        height: 100vh;
+        background-color: $second-color;
+
+        .promo{
+            height: 100vh;
+            
+        }
+    }
+
+    video {
+        display: none;
+    }
+}
+
 .nuestros-cocteles {
     background-color: $second-color;
     color: $tree-color;
@@ -171,6 +187,36 @@
     }
 }
 
+@media only screen and (max-width: 576px) {
+    
+    .nuestros-cocteles {
+        height: 0vh;
+        padding-top: 40px;
+        
+
+        .container {
+            padding-top: 0;
+            display: flex;
+            flex-direction: column;
+            z-index: -1;
+            inset: 0;
+
+            h3 {
+                display: none;
+            }
+
+            .cocteles {
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
 .seccion2 {
     height: 70vh;
     background-color: $second-color;
@@ -193,6 +239,39 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .seccion2 {
+        height: 250vh;
+        background-color: $font-color;
+        display: flex;
+        flex-direction: column;
+
+        .seccion3 {
+            padding-top: 10vh 10vh;
+
+            h4 {
+                padding-top: 0px;
+                color: $tree-color;
+            }
+
+            iframe {
+                padding-top: 0px;
+                width: 400px;
+            }
+        }
+
+        .seccion4 {
+            h4 {
+                color: $tree-color;
+            }
+
+            iframe {
+                width: 400px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
     .seccion2 {
         height: 250vh;
         background-color: $font-color;
