@@ -53,8 +53,13 @@
 
 @media only screen and (max-width: 768px) {
     .seccion {
-        height: 90vh;
+        height: 100vh;
         background-color: $second-color;
+
+        .promo{
+            height: 100vh;
+            
+        }
     }
 
     video {
@@ -137,17 +142,18 @@
 }
 
 @media only screen and (max-width: 768px) {
+    
     .nuestros-cocteles {
-        height: 200vh;
-        padding-top: 350px;
+        height: 0vh;
+        padding-top: 40px;
+        
 
         .container {
             padding-top: 0;
             display: flex;
             flex-direction: column;
-            height: 360vh;
+            z-index: -1;
             inset: 0;
-
 
             h3 {
                 display: none;
@@ -188,7 +194,7 @@
 
 @media only screen and (max-width: 768px) {
     .seccion2 {
-        height: 160vh;
+        height: 250vh;
         background-color: $font-color;
         display: flex;
         flex-direction: column;
@@ -197,10 +203,12 @@
             padding-top: 10vh 10vh;
 
             h4 {
+                padding-top: 0px;
                 color: $tree-color;
             }
 
             iframe {
+                padding-top: 0px;
                 width: 400px;
             }
         }

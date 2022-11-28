@@ -69,17 +69,20 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
+
     .logo {
         background-color: $second-color;
         height: 10vh;
-        font-size: 2em;
+        font-size: 3.5em;
         text-align: center;
-        margin: auto;
+        align-items: center;
         line-height: 10vh;
+        width: 100%;
+        padding-top: 5px;
+        justify-content: space-around;
         transition: .5s linear;
         color: $primary-color;
         font-family: 'Uchen', serif;
-
     }
 
     .logo:hover {
